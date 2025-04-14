@@ -1,0 +1,48 @@
+# Ignore contrib.
+/docroot/core
+/docroot/libraries
+/docroot/modules/contrib
+/docroot/profiles
+/docroot/themes/contrib
+
+# Ignore local development.
+/docroot/sites/*/settings.local.php
+/docroot/sites/*/development.services.yml
+
+# Ignore UGC.
+/docroot/sites/*/files
+
+# Ignore Composer-managed dependencies.
+/vendor
+
+# Ignore environment.
+/.env
+
+# Ignore test configuration overrides.
+/phpcs.xml
+/phpstan.neon
+/phpunit.xml
+
+# Ignore Drupal scaffold.
+/.editorconfig
+/.gitattributes
+
+# Ignore CI.
+/.editorconfig
+/.gitattributes
+
+# Node Modules #
+node_modules
+
+# OS generated files #
+.DS_Store
+
+# Ignore ddev Solr config
+/.ddev/solr/conf
+
+# Ignore sql dump.
+*.sql
+*.sql.gz
+
+# Ignore PHPStorm proj.
+/.idea
