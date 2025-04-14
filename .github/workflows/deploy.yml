@@ -30,4 +30,4 @@ jobs:
           username: ${{ secrets.MIROHOST_USER }}
           password: ${{ secrets.MIROHOST_PASSWORD }}
           source: "./"
-          target: "/path/to/your/project"
+          target: "/var/www/lastnews"
