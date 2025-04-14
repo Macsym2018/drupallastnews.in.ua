@@ -1,4 +1,4 @@
-name: Drupal LastNewsInUA
+name: FTP Deploy to Mirohost
 
 on:
   push:
@@ -6,19 +6,16 @@ on:
       - main
 
 jobs:
-  build:
+  ftp-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Deploy to Mirohost
-        uses: appleboy/scp-action@v0.1.7
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          host: ${{ secrets.MIROHOST_HOST }}
-          username: ${{ secrets.MIROHOST_USER }}
-          password: ${{ secrets.MIROHOST_PASSWORD }}
-          port: 22
-          source: "./"
-          target: "/var/www/lastnews"
+          server: ftp://vs3168.mirohost.net
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /var/www/lastnews
