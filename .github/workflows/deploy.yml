@@ -26,8 +26,8 @@ jobs:
       - name: Deploy to Mirohost
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.89.184.88.18 }}
-          username: ${{ secrets.lastnewsr }}
-          password: ${{ secrets.6wP33sS70nys }}
+          host: ${{ secrets.MIROHOST_HOST }}
+          username: ${{ secrets.MIROHOST_USER }}
+          password: ${{ secrets.MIROHOST_PASSWORD }}
           source: "./"
-          target: "/var/www/lastnews"
+          target: "/path/to/your/project"
