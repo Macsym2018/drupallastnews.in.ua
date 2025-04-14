@@ -18,4 +18,4 @@ jobs:
           server: ftp://vs3168.mirohost.net
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /var/www/lastnews
+          server-dir: /var/www/lastnews/
