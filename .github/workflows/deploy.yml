@@ -2,7 +2,8 @@ name: Drupal LastNewsInUA
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   build:
@@ -10,12 +11,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
+        uses: actions/checkout@v3
 
       - name: Deploy to Mirohost
         uses: appleboy/scp-action@v0.1.7
@@ -23,5 +19,6 @@ jobs:
           host: ${{ secrets.MIROHOST_HOST }}
           username: ${{ secrets.MIROHOST_USER }}
           password: ${{ secrets.MIROHOST_PASSWORD }}
+          port: 22
           source: "./"
           target: "/var/www/lastnews"
