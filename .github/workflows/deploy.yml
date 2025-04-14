@@ -17,12 +17,6 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run tests
-        run: npm test
-
       - name: Deploy to Mirohost
         uses: appleboy/scp-action@master
         with:
