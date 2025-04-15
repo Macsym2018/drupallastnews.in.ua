@@ -20,6 +20,6 @@ jobs:
           password: ${{ secrets.MIROHOST_PASSWORD }}
           script: |
             ls -l
-            cd /lastnews.in.ua/
+            cd lastnews.in.ua
             composer install --no-dev
 
