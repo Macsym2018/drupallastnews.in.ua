@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.MIROHOST_PASSWORD }}
           port: 22
           source: "./"
-          target: "lastnews.in.ua"  # або повний шлях типу /home/user/www/
+          target: "lastnews.in.ua"
 
       - name: Run composer install on server
         uses: appleboy/ssh-action@v0.1.6
