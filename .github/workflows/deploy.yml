@@ -1,4 +1,4 @@
-name: FTP Deploy to Mirohost
+name: SSH Deploy to Mirohost
 
 on:
   push:
@@ -12,10 +12,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Run composer install on server
+        uses: appleboy/ssh-action@v0.1.6
         with:
-          server: vs3168.mirohost.net
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /lastnews/
+          host: ${{ secrets.MIROHOST_HOST }}
+          username: ${{ secrets.MIROHOST_USER }}
+          password: ${{ secrets.MIROHOST_PASSWORD }}
+          script: |
+            cd /lastnews.in.ua/
+            composer install --no-dev
+
