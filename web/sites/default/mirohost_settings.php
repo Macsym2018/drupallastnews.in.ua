@@ -9,7 +9,7 @@
  * that you leave this file alone.
  */
 
-$host = "localhost";
+$host = "vs3168.mirohost.net";
 $port = 3306;
 $driver = "mysql";
 
