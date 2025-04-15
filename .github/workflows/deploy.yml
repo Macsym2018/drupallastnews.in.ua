@@ -6,11 +6,22 @@ on:
       - main
 
 jobs:
-  ftp-deploy:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
+
+      - name: Upload files to server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.MIROHOST_HOST }}
+          username: ${{ secrets.MIROHOST_USER }}
+          password: ${{ secrets.MIROHOST_PASSWORD }}
+          port: 22
+          source: "./"
+          target: "lastnews.in.ua"  # або повний шлях типу /home/user/www/
 
       - name: Run composer install on server
         uses: appleboy/ssh-action@v0.1.6
@@ -18,8 +29,7 @@ jobs:
           host: ${{ secrets.MIROHOST_HOST }}
           username: ${{ secrets.MIROHOST_USER }}
           password: ${{ secrets.MIROHOST_PASSWORD }}
+          port: 22
           script: |
-            ls -l
             cd lastnews.in.ua
             composer install --no-dev
-
