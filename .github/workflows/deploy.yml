@@ -32,4 +32,4 @@ jobs:
           port: 22
           script: |
             cd lastnews.in.ua
-            composer install --no-dev
+            composer install
