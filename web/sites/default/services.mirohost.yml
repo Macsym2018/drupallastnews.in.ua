@@ -1,0 +1,3 @@
+services:
+  logger.drupaltodrush:
+    class: Drupal\Core\Logger\NullLogger

@@ -782,3 +782,7 @@ if (file_exists(__DIR__ . '/mirohost_settings.php') && getenv('IS_DDEV_PROJECT')
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+
+if (PHP_SAPI !== 'cli') {
+  $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/services.mirohost.yml';
+}
