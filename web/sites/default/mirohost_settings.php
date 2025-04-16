@@ -20,7 +20,7 @@ $databases['default']['default']['host'] = $host;
 $databases['default']['default']['port'] = $port;
 $databases['default']['default']['driver'] = $driver;
 
-//$settings['hash_salt'] = '186ca9a9958516e82ecbb39702de3b75224b48dd8d3d58a6c2832afc5a323941';
+$settings['hash_salt'] = '28af1f81e6dd8ae48b590d2162415805b131aecbe58df4021525f5bf8842db84c8c81c1265377f4ebc4a04079a4af06257f54de70aac63';
 
 // Recommended setting for Drupal 10 only
 $settings['state_cache'] = TRUE;
