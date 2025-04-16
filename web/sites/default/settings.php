@@ -761,8 +761,8 @@ if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 
   include __DIR__ . '/settings.ddev.php';
 }
 
-if (file_exists(__DIR__ . '/mirohost_settings.php')) {
-  include __DIR__ . '/mirohost_settings.ddev.php';
+if (file_exists(__DIR__ . '/mirohost_settings.php') && getenv('IS_DDEV_PROJECT') != 'true') {
+  include __DIR__ . '/mirohost_settings.php';
 }
 
 /**
