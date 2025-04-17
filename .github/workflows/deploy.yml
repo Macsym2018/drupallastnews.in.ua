@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.MIROHOST_PASSWORD }}
           port: 22
           source: "./"
-          target: "lastnews.in.ua"
+          target: "drupal.lastnews.in.ua"
 
       - name: Run composer install on server
         uses: appleboy/ssh-action@v0.1.6
@@ -31,5 +31,5 @@ jobs:
           password: ${{ secrets.MIROHOST_PASSWORD }}
           port: 22
           script: |
-            cd lastnews.in.ua
+            cd drupal.lastnews.in.ua
             composer install
