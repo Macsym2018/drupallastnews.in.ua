@@ -22,9 +22,6 @@ jobs:
           port: 22
           source: "./"
           target: "drupal.lastnews.in.ua"
-          rm: true
-          strip_components: 1
-          args: "-r --exclude=web/sites/default/files/*"
 
       - name: Run composer install on server
         uses: appleboy/ssh-action@v0.1.6
