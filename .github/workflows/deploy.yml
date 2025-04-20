@@ -33,3 +33,4 @@ jobs:
           script: |
             cd drupal.lastnews.in.ua
             composer install
+            vendor/bin/drush cim -y
