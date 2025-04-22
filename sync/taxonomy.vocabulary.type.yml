@@ -1,0 +1,8 @@
+uuid: 51dd8175-653d-45b7-9e9e-fe3ae00164ef
+langcode: en
+status: true
+dependencies: {  }
+name: Type
+vid: type
+description: 'Тип контенту'
+weight: 0

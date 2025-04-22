@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_type
     - image.style.thumbnail
     - node.type.article
   module:
@@ -54,6 +55,16 @@ content:
   field_tags:
     type: entity_reference_autocomplete_tags
     weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_type:
+    type: entity_reference_autocomplete
+    weight: 121
     region: content
     settings:
       match_operator: CONTAINS

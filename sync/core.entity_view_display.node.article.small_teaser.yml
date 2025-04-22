@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
+    - field.field.node.article.field_type
     - node.type.article
   module:
     - text
@@ -35,4 +36,5 @@ hidden:
   comment: true
   field_image: true
   field_tags: true
+  field_type: true
   langcode: true
