@@ -52,6 +52,9 @@
             },
             "drupal/decoupled_router": {
                 "Unable to resolve path on node in other language than default": "https://www.drupal.org/files/issues/2022-11-30/decouple_router-3111456-resolve-language-issue-58.patch"
+            },
+            "drupal/core": {
+                "Call to a member function getConfigDependencyKey() on null": "https://www.drupal.org/files/issues/2021-12-09/2957376.patch"
             }
         },
         "drupal-scaffold": {
