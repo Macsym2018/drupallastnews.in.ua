@@ -23,11 +23,13 @@
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
         "drupal/decoupled_router": "2.0.4",
+        "drupal/devel": "^5.2",
         "drupal/next": "^1.6",
         "drupal/pathauto": "^1.13",
         "drupal/simple_oauth": "^5.2",
         "drupal/subrequests": "3.0.7",
-        "drupal/token": "^1.15"
+        "drupal/token": "^1.15",
+        "drush/drush": "^12"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -112,8 +114,5 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
-    },
-    "require-dev": {
-        "drush/drush": "^11.6"
     }
 }
