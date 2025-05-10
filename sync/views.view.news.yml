@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.small_teaser
+    - core.entity_view_mode.node.teaser
     - node.type.article
     - taxonomy.vocabulary.type
   content:
-    - 'taxonomy_term:type:56ce5381-9881-46cc-94cd-0a3d024a84d5'
-    - 'taxonomy_term:type:b53d2018-bd3b-4a9c-8223-cd1f5c4c8d78'
-    - 'taxonomy_term:type:f51df8c2-c939-4bc0-9e8f-69257071be92'
+    - 'taxonomy_term:type:1d4adfe2-87d0-4252-b464-eeefd857f37e'
+    - 'taxonomy_term:type:5d88049f-daf7-4140-a932-2b6eed810048'
+    - 'taxonomy_term:type:800dc5da-8397-496b-953d-47cb0bbbd80a'
   module:
     - node
     - taxonomy
@@ -155,11 +155,6 @@ display:
           plugin_id: bundle
           value:
             article: article
-        field_type_target_id:
-          id: field_type_target_id
-          table: node__field_type
-          field: field_type_target_id
-          plugin_id: taxonomy_index_tid
       style:
         type: grid
         options:
@@ -175,7 +170,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: small_teaser
+          view_mode: teaser
       query:
         type: views_query
         options:
@@ -193,23 +188,45 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
-    id: block_1
+  block_news:
+    id: block_news
     display_title: Block
     display_plugin: block
     position: 1
     display_options:
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ›
+            previous: ‹
+            first: «
+            last: »
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      defaults:
+        pager: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
