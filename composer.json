@@ -25,6 +25,7 @@
         "drupal/decoupled_router": "2.0.4",
         "drupal/devel": "^5.2",
         "drupal/jsonapi_menu_items": "^1.2",
+        "drupal/jsonapi_views": "^1.1",
         "drupal/metatag": "^2.1",
         "drupal/next": "^1.6",
         "drupal/pathauto": "^1.13",
