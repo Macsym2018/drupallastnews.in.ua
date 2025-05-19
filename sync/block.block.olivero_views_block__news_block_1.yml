@@ -2,10 +2,6 @@ uuid: 519e6af7-49d1-41ce-9bd6-20a76e461acc
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.news
-  module:
-    - views
   theme:
     - olivero
 id: olivero_views_block__news_block_1

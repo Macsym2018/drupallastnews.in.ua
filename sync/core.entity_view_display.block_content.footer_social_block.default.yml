@@ -1,0 +1,25 @@
+uuid: fdb4fe25-7496-435b-9d25-4de04e2e869e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_social_block
+    - field.field.block_content.footer_social_block.field_social_links
+  module:
+    - entity_reference_revisions
+id: block_content.footer_social_block.default
+targetEntityType: block_content
+bundle: footer_social_block
+mode: default
+content:
+  field_social_links:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

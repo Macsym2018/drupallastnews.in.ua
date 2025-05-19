@@ -1,0 +1,10 @@
+uuid: 2e4ec6fe-c9a7-43cb-9d35-fba910a5ea11
+langcode: en
+status: true
+dependencies: {  }
+id: social_icons_paragraph
+label: 'Social icons paragraph'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

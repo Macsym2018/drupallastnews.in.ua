@@ -1,0 +1,8 @@
+uuid: 0383d983-7192-416e-b92c-6f4be2bbfc64
+langcode: en
+status: true
+dependencies: {  }
+id: footer_social_block
+label: 'Footer social block'
+revision: 0
+description: 'Display social block(Instagram, Telegram etc)'

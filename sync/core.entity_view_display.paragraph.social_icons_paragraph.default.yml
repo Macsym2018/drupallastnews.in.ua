@@ -1,0 +1,52 @@
+uuid: 98898faf-1a15-4af9-9766-6cb5d013e641
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.social_icons_paragraph.field_background_image
+    - field.field.paragraph.social_icons_paragraph.field_icon
+    - field.field.paragraph.social_icons_paragraph.field_link
+    - paragraphs.paragraphs_type.social_icons_paragraph
+  module:
+    - image
+    - link
+id: paragraph.social_icons_paragraph.default
+targetEntityType: paragraph
+bundle: social_icons_paragraph
+mode: default
+content:
+  field_background_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
