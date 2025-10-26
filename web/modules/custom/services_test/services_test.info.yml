@@ -1,0 +1,6 @@
+name: Services Test
+description: Provide Decoration and Override
+package: Custom
+
+type: module
+core_version_requirement: ^10 || ^11
