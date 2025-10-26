@@ -1,0 +1,6 @@
+name: Currency News
+description: Provide information about currency
+package: Custom
+
+type: module
+core_version_requirement: ^10 || ^11
