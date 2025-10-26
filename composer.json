@@ -31,10 +31,11 @@
         "drupal/paragraphs": "^1.17",
         "drupal/pathauto": "^1.13",
         "drupal/simple_oauth": "^5.2",
+        "drupal/simple_sitemap": "^4.1",
         "drupal/subrequests": "3.0.7",
         "drupal/svg_image": "^3.0",
         "drupal/token": "^1.15",
-        "drush/drush": "^12"
+        "drush/drush": "^12.5"
     },
     "conflict": {
         "drupal/drupal": "*"
