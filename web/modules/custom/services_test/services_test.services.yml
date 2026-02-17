@@ -1,0 +1,6 @@
+services:
+  services_test.renderer:
+    class: Drupal\services_test\Render\RendererDecorator
+    decorates: renderer
+    decoration_priority: 99
+    autowire: true
