@@ -1,0 +1,7 @@
+curency_news.curency_page:
+  path: '/curency'
+  defaults:
+    _controller: '\Drupal\curency_news\Controller\CurencyController::displayCurency'
+    _title: 'Display currency'
+  requirements:
+    _permission: 'access content'

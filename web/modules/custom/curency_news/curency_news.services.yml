@@ -1,0 +1,8 @@
+services:
+  plugin.manager.curency_provider:
+    class: Drupal\curency_news\CurrencyProvider\CurrencyProviderManager
+    arguments: ['@container.namespaces', '@cache.discovery', '@module_handler']
+
+  test.test:
+    class: Drupal\curency_news\Test\TestController
+    arguments: ['@container.namespaces', '@cache.discovery', '@module_handler']
