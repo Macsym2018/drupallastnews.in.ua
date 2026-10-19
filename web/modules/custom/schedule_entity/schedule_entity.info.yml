@@ -1,0 +1,6 @@
+name: Schedule Entity
+description: Provide Schedule entity
+package: Custom
+
+type: module
+core_version_requirement: ^10 || ^11

@@ -1,0 +1,15 @@
+schedule.add:
+  path: '/schedule/add'
+  defaults:
+    _entity_form: 'schedule.add'
+    _title: 'Add Schedule'
+  requirements:
+    _permission: 'add schedule'
+
+schedule.edit:
+  path: '/schedule/{schedule}/edit'
+  defaults:
+    _entity_form: 'schedule.edit'
+    _title: 'Edit Schedule'
+  requirements:
+    _permission: 'add schedule'

@@ -1,0 +1,6 @@
+services:
+  schedule.grant_storage:
+    class: Drupal\schedule_entity\ScheduleGrantDatabaseStorage
+    arguments: [ '@database', '@module_handler', '@language_manager' ]
+    tags:
+      - { name: backend_overridable }

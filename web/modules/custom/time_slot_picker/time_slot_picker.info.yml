@@ -1,0 +1,6 @@
+name: Time Slot Picker
+description: Provide Time Slot Picker field
+package: Custom
+
+type: module
+core_version_requirement: ^10 || ^11
