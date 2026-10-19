@@ -1,0 +1,12 @@
+time_slot_picker_widget:
+  version: 1.0
+  css:
+    theme:
+      css/time_slot_picker.css: {}
+  js:
+    js/time_slot_picker.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery
+    - core/once

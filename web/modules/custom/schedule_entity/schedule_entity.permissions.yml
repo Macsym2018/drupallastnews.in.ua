@@ -1,0 +1,15 @@
+view schedule entities:
+  title: 'View Schedule entities'
+
+add schedule entities:
+  title: 'Add Schedule entities'
+
+edit schedule entities:
+  title: 'Edit Schedule entities'
+
+delete schedule entities:
+  title: 'Delete Schedule entities'
+
+administer schedule entities:
+  title: 'Administer Schedule entities'
+  restrict access: true

@@ -1,0 +1,5 @@
+schedule_entity.add_content_action:
+  route_name: schedule.add
+  title: 'Add schedule'
+  appears_on:
+    - entity.schedule_entity.collection

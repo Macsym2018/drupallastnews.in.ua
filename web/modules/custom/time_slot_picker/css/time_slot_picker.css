@@ -1,0 +1,29 @@
+.time-slots-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.time-slot-btn {
+  padding: 10px 15px;
+  border: 1px solid #b8b8b8;
+  background-color: #f4f4f4;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.time-slot-btn:hover {
+  background-color: #e2e2e2;
+  border-color: #888;
+}
+
+.time-slot-btn.active {
+  background-color: #003cc5;
+  color: #ffffff;
+  border-color: #002b8e;
+  font-weight: bold;
+}

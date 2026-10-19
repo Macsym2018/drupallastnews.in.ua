@@ -1,0 +1,7 @@
+field.field_settings.time_slot_picker:
+  type: mapping
+  label: 'Time slot picker settings'
+  mapping:
+    size:
+      type: string
+      label: 'Size'
